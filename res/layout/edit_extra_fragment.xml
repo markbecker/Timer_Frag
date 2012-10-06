@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/edit_extra"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textTitleEditExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF4444"
+        android:paddingLeft="7dp"
+        android:text="@string/title_edit_extra_fragment"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/padding_xlarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textNameEditExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_timer_name"
+        android:inputType="textNoSuggestions"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelRestBtwn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:text="@string/label_rest_btwn"
+            android:textSize="@dimen/padding_large" />
+
+        <Spinner
+            android:id="@+id/rest_btwn_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:text="@string/label_weight"
+            android:textSize="@dimen/padding_large" />
+
+        <EditText
+            android:id="@+id/textWeightEditExtra"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_no_weight"
+            android:inputType="number"
+            android:textSize="@dimen/padding_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelSeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:text="@string/label_seat"
+            android:textSize="@dimen/padding_large" />
+
+        <EditText
+            android:id="@+id/textSeatEditExtra"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_no_seat"
+            android:inputType="number"
+            android:textSize="@dimen/padding_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelNotes"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_notes"
+            android:textSize="@dimen/padding_large" />
+
+        <EditText
+            android:id="@+id/textNotesEditExtra"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_no_notes"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            android:singleLine="false"
+            android:textSize="@dimen/padding_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSaveEditExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:minHeight="48dp"
+            android:onClick="onButtonClicked"
+            android:padding="10dp"
+            android:text="@string/button_save"
+            android:textSize="@dimen/padding_large" />
+
+        <Button
+            android:id="@+id/buttonDeleteEditExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:minHeight="48dp"
+            android:onClick="onButtonClicked"
+            android:padding="10dp"
+            android:text="@string/button_delete"
+            android:textSize="@dimen/padding_large" />
+
+        <Button
+            android:id="@+id/buttonCancelEditExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:minHeight="48dp"
+            android:onClick="onButtonClicked"
+            android:padding="10dp"
+            android:text="@string/button_cancel"
+            android:textSize="@dimen/padding_large" />
+    </LinearLayout>
+
+</LinearLayout>

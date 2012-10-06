@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/run_clock"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textTitleRunClock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA66CC"
+        android:paddingLeft="7dp"
+        android:text="@string/title_run_clock_fragment"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/padding_xlarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textNameRunClock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/padding_xlarge" />
+
+    <TextView
+        android:id="@+id/textTimeRunClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_time_bg"
+        android:clickable="true"
+        android:onClick="onButtonClicked"
+        android:paddingBottom="6dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/text_time"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/padding_5xlarge"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/layoutAdjustSetSetText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/label_set"
+                android:textSize="@dimen/padding_xlarge" />
+
+            <TextView
+                android:id="@+id/textCountSetRunClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/text_count_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/text_count_set"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DDDDDD"
+                android:textSize="@dimen/padding_3xlarge"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/layoutAdjustSetRepText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/label_rep"
+                android:textSize="@dimen/padding_xlarge" />
+
+            <TextView
+                android:id="@+id/textCountRepRunClock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/text_count_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/text_count_rep"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#DDDDDD"
+                android:textSize="@dimen/padding_3xlarge"
+                android:typeface="sans" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape"
+            android:drawableTop="@drawable/btn_start"
+            android:onClick="onButtonClicked"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/buttonPause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape"
+            android:drawableTop="@drawable/btn_pause"
+            android:onClick="onButtonClicked"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_shape"
+            android:drawableTop="@drawable/btn_refresh"
+            android:onClick="onButtonClicked"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonSound"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_none"
+            android:contentDescription="@string/text_button_sound_on_off"
+            android:drawableTop="@drawable/btn_blank"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/buttonSoundUp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shape_none"
+            android:contentDescription="@string/text_button_sound_on_off"
+            android:drawableTop="@drawable/btn_blank"
+            android:onClick="onButtonClicked" />
+
+        <Button
+            android:id="@+id/buttonSoundDown"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_shape_none"
+            android:contentDescription="@string/text_button_sound_on_off"
+            android:drawableTop="@drawable/btn_blank"
+            android:onClick="onButtonClicked" />
+    </LinearLayout>
+
+</LinearLayout>

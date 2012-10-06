@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- layout-port -->
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33B5E5"
+        android:paddingLeft="7dp"
+        android:text="@string/title_list_fragment"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/padding_xlarge"
+        android:textStyle="bold" />
+
+    <include layout="@layout/list_fragment_logo" />
+
+    <include layout="@layout/list_fragment_list" />
+
+</LinearLayout>

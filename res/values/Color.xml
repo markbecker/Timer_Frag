@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="timer_list">#FFFFFF</color>
+ <color name="run_clock">#E5CAF2</color>
+ <color name="run_extra">#E2F0B6</color>
+ <color name="edit_clock">#FFECC0</color>
+ <color name="edit_extra">#FFCACA</color>
+ <color name="app_options">#DFDFFF</color>
+    
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">18dp</dimen>
+    <dimen name="padding_xlarge">28dp</dimen>
+    <dimen name="padding_xxlarge">36dp</dimen>
+    <dimen name="padding_3xlarge">46dp</dimen>
+    <dimen name="padding_4xlarge">62dp</dimen>
+    <dimen name="padding_5xlarge">76dp</dimen>
+    <dimen name="padding_6xlarge">92dp</dimen>
+    <dimen name="padding_7xlarge">124dp</dimen>
+
+</resources>

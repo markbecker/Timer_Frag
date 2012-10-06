@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/run_extra"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textTitleRunExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99CC00"
+        android:paddingLeft="7dp"
+        android:text="@string/title_run_extra_fragment"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/padding_xlarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textNameRunExtra"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/padding_xlarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_rest_btwn"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/labelEmpty1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/textRestRunExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_rest_btwn"
+            android:textSize="@dimen/padding_xlarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_weight"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/labelEmpty3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/textWeightRunExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_weight"
+            android:textSize="@dimen/padding_xlarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_seat"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/labelEmpty4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textlines"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/textSeatRunExtra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_seat"
+            android:textSize="@dimen/padding_xlarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/labelNotes"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textlines"
+            android:text="@string/label_notes"
+            android:textSize="@dimen/padding_xlarge" />
+
+        <TextView
+            android:id="@+id/textNotesRunExtra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minLines="2"
+            android:text="@string/label_notes"
+            android:textSize="@dimen/padding_xlarge" />
+    </LinearLayout>
+
+</LinearLayout>

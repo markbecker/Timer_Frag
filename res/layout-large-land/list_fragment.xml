@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/timer_list"
+    android:gravity="top"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <!-- layout-port -->
+
+    <ImageView
+        android:id="@+id/imageTitleTimerList"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#33B5E5"
+        android:contentDescription="@string/text_timer_list_logo"
+        android:src="@drawable/logo_timer_list" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"  >
+
+        <include layout="@layout/list_fragment_logo" />
+
+        <include layout="@layout/list_fragment_list" />
+    </LinearLayout>
+
+</LinearLayout>

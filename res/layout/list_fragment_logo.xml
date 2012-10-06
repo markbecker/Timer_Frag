@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLeft"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_android_exercise_1"
+        android:paddingBottom="10dp"
+        android:src="@drawable/android_exercise_1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:minHeight="36dp"
+            android:onClick="onButtonClicked"
+            android:padding="10dp"
+            android:text="@string/button_new"
+            android:textSize="@dimen/padding_large" />
+
+        <Button
+            android:id="@+id/buttonReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/button_shape"
+            android:minHeight="36dp"
+            android:onClick="onButtonClicked"
+            android:padding="10dp"
+            android:text="@string/button_reload"
+            android:textSize="@dimen/padding_large" />
+
+    </LinearLayout>
+
+</LinearLayout>
